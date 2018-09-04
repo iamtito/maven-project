@@ -11,7 +11,7 @@ pipeline{
 			}
 			post {
 				success {
-					echo 'success' >> /home/tito/github/maven-project/webapp/src/main/webapp/index.jsp
+					echo 'success' >> ~/github/maven-project/webapp/src/main/webapp/index.jsp
 					echo 'Now Archiving...'
 					archiveArtifacts artifacts: '**/target/*.war'
 
